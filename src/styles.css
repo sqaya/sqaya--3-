@@ -39,5 +39,7 @@ li {
 }
 .btn-outline-primary {
   color: blue;
+  
 }
+.right-btn {margin-right: 10px}
 .footer {max-width: 600px;  margin: 20px auto;}
