@@ -53,7 +53,8 @@ function search(event) {
 function displayCelsiusTemp(event){
 event.preventDefault();
 let celsiusTemperature = (14-32)*5/9;
-  alert(celsiusTemperature);
+  let temperatureElement = document.querySelector("#temp");
+  temperatureElement.innerHTML = celsiusTemperature;
 }
 
 let searchForm = document.querySelector("#search-form");
