@@ -53,7 +53,7 @@ function search(event) {
 function displayCelsiusTemp(event){
 event.preventDefault();
   let celsiusTemp = (14 − 32) * 5/9;
-  alert("hello");
+  alert(celsiusTemp);
 }
 
 let searchForm = document.querySelector("#search-form");
