@@ -52,8 +52,7 @@ function search(event) {
 
 function displayCelsiusTemp(event){
 event.preventDefault();
-  let celsiusTemp = (32 − 32) * 5/9 = 0;
-
+  let celsiusTemp = (32 − 32) * 5/9;
   alert(celsiusTemp);
 }
 
