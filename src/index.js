@@ -52,8 +52,8 @@ function search(event) {
 
 function displayCelsiusTemp(event){
 event.preventDefault();
-  
-  alert("link clicked");
+let celsiusTemperature = 0;
+  alert(celciusTemperature);
 }
 
 let searchForm = document.querySelector("#search-form");
