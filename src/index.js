@@ -27,15 +27,19 @@ dateElement.innerHTML = formatDate(currentTime);
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  
+  fTemperature = response.data.main.temp;
+    document.querySelector("#temp").innerHTML = Math.round(fTemperature);
+  
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  
+   
+    
 let iconElement = document.querySelector("#icon");
 iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
@@ -52,10 +56,11 @@ function search(event) {
 
 function displayCelsiusTemp(event){
 event.preventDefault();
-let celsiusTemperature = (14-32)*5/9;
+let celsiusTemperature = (fTemperature-32)*5/9;
   let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = celsiusTemperature;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+let fTemperature = null;
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
