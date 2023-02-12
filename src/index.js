@@ -54,7 +54,7 @@ function displayCelsiusTemp(event){
 event.preventDefault();
   let celsiusTemp = (32 − 32) * 5/9 = 0
 
-  alert("celsiusTemp");
+  alert(celsiusTemp);
 }
 
 let searchForm = document.querySelector("#search-form");
