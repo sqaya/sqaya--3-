@@ -63,7 +63,7 @@ let celsiusTemperature = (fTemperature-32)*5/9;
 function displayFahrenheitTemp(event) {
 event.preventDefault();
 let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = fTemperature;
+  temperatureElement.innerHTML = Math.round(fTemperature);
 }
 let fTemperature = null;
 
