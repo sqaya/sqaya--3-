@@ -50,5 +50,14 @@ function search(event) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
+function displayCelsiusTemp(event){
+event.preventDefault();
+  alert("click");
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
+
+let celsiusLink = document.querySelector("#celsiusLink");
+celsiusLink.addEventListener("click", displayCelsiusTemp)
+
