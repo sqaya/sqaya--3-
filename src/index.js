@@ -58,6 +58,6 @@ event.preventDefault();
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-let celsiusLink = document.querySelector("#celsiusLink");
+let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
 
