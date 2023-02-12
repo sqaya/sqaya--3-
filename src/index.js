@@ -52,7 +52,7 @@ function search(event) {
 
 function displayCelsiusTemp(event){
 event.preventDefault();
-let celsiusTemperature = 0;
+let celsiusTemperature = (14-32)*5/9;
   alert(celsiusTemperature);
 }
 
