@@ -33,14 +33,36 @@ li {
   font-weight: 400;
   line-height: 1;
 }
-.units {position: relative; top: -50px;}
+.units {
+  position: relative;
+  top: -50px;
+}
 .fa-solid {
   color: rgb(111, 0, 255);
   font-size: 50px;
 }
 .btn-outline-primary {
   color: blue;
-  
 }
-.right-btn {margin-right: 10px}
-.footer {max-width: 600px;  margin: 20px auto;}
+.right-btn {
+  margin-right: 10px;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+.weather-forecast-date {
+  margin-top: 16px;
+  opacity: 0.6;
+}
+.weather-forecast-temps {
+  font-size: 13px;
+}
+.temp-min {
+  opacity: 0.6;
+}
+.footer {
+  max-width: 600px;
+  margin: 20px auto;
+}
